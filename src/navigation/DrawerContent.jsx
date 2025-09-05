@@ -209,6 +209,13 @@ const DrawerContent = (props) => {
           label={t('statistics')}
           onPress={() => props.navigation.navigate('Statistics')}
         />
+        {token && (
+          <DrawerItem
+            icon={({ color, size }) => <Ionicons name="person-outline" color={color} size={size} />}
+            label={t('profile.title')}
+            onPress={() => props.navigation.navigate('Profile')}
+          />
+        )}
         <DrawerItem
           icon={({ color, size }) => <Ionicons name="thumbs-up-outline" color={color} size={size} />}
           label={t('reactions_page.title')}

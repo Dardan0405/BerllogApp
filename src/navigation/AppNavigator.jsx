@@ -12,6 +12,7 @@ import ReactionTypesScreen from '../screens/ReactionTypesScreen';
 import PostDetailsScreen from '../screens/PostDetailsScreen';
 import UserDetailsScreen from '../screens/UserDetailsScreen';
 import MapScreen from '../screens/MapScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 import HeaderBar from '../ui/HeaderBar';
 import DrawerContent from './DrawerContent';
 import AuthNavigator from './AuthNavigator';
@@ -43,6 +44,7 @@ const AppNavigator = () => {
           <Drawer.Screen name="Statistics" component={StatisticsStackNavigator} />
           <Drawer.Screen name="ReactionTypes" component={ReactionTypesScreen} />
           <Drawer.Screen name="About" component={AboutScreen} />
+          <Drawer.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} />
         </Drawer.Navigator>
       ) : (
         <AuthNavigator />
