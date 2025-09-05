@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "BerllogApp",
+    "slug": "berllogapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Image_Editor.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Image_Editor.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": [
+        "android.permission.DETECT_SCREEN_CAPTURE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Image_Editor.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/Image_Editor.png"
+    },
+    "plugins": [
+      "expo-localization"
+    ]
+  }
+}
